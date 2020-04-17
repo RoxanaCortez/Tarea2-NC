@@ -20,7 +20,7 @@ public class MainController {
 	
 	//URL: http://localhost:8080/nombreDia?dia=16&mes=4&anio=2020
 	@RequestMapping("/nombreDia")
-	public @ResponseBody String parametro(HttpServletRequest request) {
+	public @ResponseBody String nombreDia(HttpServletRequest request) {
 		Integer dia = Integer.parseInt(request.getParameter("dia"));
 		Integer mes = Integer.parseInt(request.getParameter("mes"));
 		Integer anio = Integer.parseInt(request.getParameter("anio"));
